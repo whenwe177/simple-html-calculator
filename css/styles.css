@@ -1,0 +1,16 @@
+:root {
+    --calcgreen: rgb(78, 166, 116);
+}
+
+.calc-head {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--calcgreen);
+
+    height: auto;
+    width: 85vw;
+
+    border-radius: 5% 5% 5% 5%;
+
+    margin: 0 auto;
+}
