@@ -5,14 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
     <link href="../css/styles.css" rel="stylesheet">
-    <script src="../script/index.js"></script>
     <title>Supercalculator</title>
 </head>
 
-<body>
-    <div class="calc-head">
-        <p>Supercalculator</p>
+<body id="body-flex">
+    <div class="calc-navbar">
+        <h2>Supercalculator</h2>
+        <button type="button" id="deg-button" onclick="degToRad()">Degrees</button>
     </div>
+
+    <div>
+        <input type="text" class="text-area" id="text-area">
+    </div>
+
+    <div class="calc-grid">
+        <div class="calc-grid">
+            <button type="button" class="calc-button"  data-tooltip="Clear the display field">C</button>
+            <button type="button" class="calc-button"  data-tooltip="Clear memory">MC</button>
+            <button type="button" class="calc-button"  data-tooltip="Add to memory">M+</button>
+            <button type="button" class="calc-button"  data-tooltip="Subtract from memory">M-</button>
+            <button type="button" class="calc-button"  data-tooltip="Recall from memory">MR</button>
+            <button type="button" class="calc-button"  data-tooltip="Digit 7">7</button>
+            <button type="button" class="calc-button"  data-tooltip="Digit 8">8</button>
+            <button type="button" class="calc-button"  data-tooltip="Digit 9">9</button>
+            <button type="button" class="calc-button"  data-tooltip="Add">+</button>
+            <button type="button" class="calc-button"  data-tooltip="Subtract">-</button>
+            <button type="button" class="calc-button"  data-tooltip="Digit 4">4</button>
+            <button type="button" class="calc-button"  data-tooltip="Digit 5">5</button>
+            <button type="button" class="calc-button"  data-tooltip="Digit 6">6</button>
+            <button type="button" class="calc-button"  data-tooltip="Divide">/</button>
+            <button type="button" class="calc-button"  data-tooltip="Multiply">*</button>
+            <button type="button" class="calc-button"  data-tooltip="Digit 1">1</button>
+            <button type="button" class="calc-button"  data-tooltip="Digit 2">2</button>
+            <button type="button" class="calc-button"  data-tooltip="Digit 3">3</button>
+            <button type="button" class="calc-button"  data-tooltip="Power">**</button>
+            <button type="button" class="calc-button"  data-tooltip="Square root">√</button>
+            <button type="button" class="calc-button"  data-tooltip="Digit 0">0</button>
+            <button type="button" class="calc-button"  data-tooltip="Decimal point">.</button>
+            <button type="button" class="calc-button"  data-tooltip="Toggle +/- sign">±</button>
+            <button type="button" class="calc-button"  data-tooltip="Equal">=</button>
+            <!-- <button type="button" class="calc-button"  data-tooltip="Digit 0">5</button>
+            <button type="button" class="calc-button"  data-tooltip="Digit 0">5</button> -->
+        </div>
+        <div class="calc-grid">
+        </div>
+    </div>
+    <script src="../script/index.js"></script>
+        
+    
 </body>
 </html>

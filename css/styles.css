@@ -1,16 +1,141 @@
 :root {
     --calcgreen: rgb(78, 166, 116);
+    --calcorange: rgb(209, 101, 0);
+    --calcblue: rgb(0, 176, 212);
 }
 
-.calc-head {
+
+#body-flex {
     display: flex;
     flex-direction: column;
+
+
+    margin: 0;
+}
+
+#deg-button {
+    padding: 0rem 1rem;
+    margin: 0.5rem 1rem;
+
+    height: 2rem;
+    align-self: center;
+
+    border-radius: 1rem;
+    border: none;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+
+    color: var(--calcgreen);
+
+    transition: padding 300ms ease;
+}
+
+#deg-button:hover {
+    padding: 0rem 1.75rem;
+}
+
+.calc-navbar {
+    display: flex;
     background-color: var(--calcgreen);
 
+    justify-content: space-between;
+    align-content: center;
+
     height: auto;
-    width: 85vw;
+    width: 100%;
 
-    border-radius: 5% 5% 5% 5%;
+    margin: 0;
+    padding: 0;
+    top: 0;
 
-    margin: 0 auto;
 }
+
+.calc-navbar h2 {
+    color: white;
+    font-family: "Otomanopee One", sans-serif;
+    font-size: 2rem;
+
+    text-align: justify;
+    padding: 1rem 0.5rem 1rem 1rem;
+    margin: 0;
+}
+
+.calc-flex {
+    display: flex;
+    flex-direction: row;
+
+    height: auto;
+    width: 100vw;
+}
+
+.calc-grid {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    grid-auto-rows: auto;
+
+    gap: 1.5rem;
+}
+
+.text-area {
+    width: 100%;
+    height: 10rem;
+
+    margin: 1.5rem 0 1rem 0;
+
+    border-radius: 1rem;
+    border: 1px black solid;
+
+    font-family: "Poppins",sans-serif;
+    font-size: 5vw;
+
+    text-align: right;
+
+    transition: border 100ms ease;
+}
+
+.text-area:focus {
+    border: 2px black solid;
+    outline: none;
+}
+
+.calc-button {
+    position: relative;
+    border: none;
+    border-radius: 1rem;
+
+    height: 2.5rem;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+
+    background-color: var(--calcblue);
+    transition: background-color 300ms ease;
+}
+
+.calc-button:hover {
+    background-color: rgb(0, 97, 171);
+}
+
+.calc-button[data-tooltip]:hover::after {
+    position: absolute;
+    content: attr(data-tooltip);
+    top: 2.5rem;
+    left: 1rem;
+
+    white-space: nowrap;
+
+    color: black;
+    font-size: 0.75rem;
+
+    background-color: lightgray;
+    border-radius: 0.5rem;
+
+    padding: 0 0.5rem;
+    margin-top: 0.15rem;
+}
+
+
+
